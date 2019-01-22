@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web_Print 演示</title>
+  <link rel="stylesheet" href="css/comm.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <div id="wrap" class="wrap">
+    <div class="con">
+      <h1>笑话几则</h1>
+      <ul>
+        <li>
+          <h3>001.</h3>
+          两个相爱的玉米粒决定结婚，可是婚礼时找不到新娘了，新郎问一直跟在身边的一个爆米花，爆米花害羞地说：讨厌，人家穿的是婚纱！
+        </li>
+        <li>
+          <h3>002.</h3>
+          一天，你遇到狮子，故作镇定，用可怕的眼神瞪狮子。突然狮子双手合十并跪了下来，你得意地说：知道厉害了吧！少顷,狮子幽幽地道：祷告完毕，可以用餐了。
+        </li>
+        <li>
+          <h3>003.</h3>
+          小杜克央求哥哥“你去向妈妈要点钱，咱们两个看电影去。”“要去你自己去，妈妈又不光是我一个人的”“可你跟妈妈认识得早一些嘛！”
+        </li>
+      </ul>
+      <div class='img-wrap'>
+        <img src="img/1.gif" />
+      </div>
+    </div>
+    <button class="btn no-print" id="btn">打印</button>
+  </div>
+</body>
+<script src="js/Print.js"></script>
+<script>
+  let btn = document.getElementById('btn');
+  btn.addEventListener('click', function () {
+    Print('#wrap', {
+      onStart: function () {
+        console.log('onStart', new Date())
+      },
+      onEnd: function () {
+        console.log('onEnd', new Date())
+      }
+    })
+  })
+</script>
+
+</html>

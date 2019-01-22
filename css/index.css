@@ -1,0 +1,18 @@
+.wrap {
+  margin: 0 auto;
+  padding: 20px;
+  width: 640px;
+  border: 1px solid #ccc;
+}
+.con h1{
+  text-align: center;
+}
+.img-wrap{
+	text-align: center;
+}
+.btn {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 16px;
+  cursor: pointer;
+}
