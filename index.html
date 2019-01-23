@@ -25,6 +25,10 @@
           <h3>003.</h3>
           小杜克央求哥哥“你去向妈妈要点钱，咱们两个看电影去。”“要去你自己去，妈妈又不光是我一个人的”“可你跟妈妈认识得早一些嘛！”
         </li>
+        <li class="no-print">
+          <h3>004.</h3>
+          我是不允许打印展示的区域，打印时你找不到我哦~
+        </li>
       </ul>
       <div class='img-wrap'>
         <img src="img/1.gif" />
@@ -38,6 +42,7 @@
   let btn = document.getElementById('btn');
   btn.addEventListener('click', function () {
     Print('#wrap', {
+      noPrint:'.no-print',
       onStart: function () {
         console.log('onStart', new Date())
       },
